@@ -29,7 +29,7 @@ export const routes: RouteObject[] = [
                 element: <About />,
               },
               {
-                path: 'house-detail',
+                path: 'house-detail/:Id',
                 element: <HouseDetail />,
               },
               {
