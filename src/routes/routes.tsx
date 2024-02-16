@@ -5,6 +5,7 @@ import DashboardLayout from '../components/layout/Dashboard';
 import Houses from '../pages/houses/Houses';
 import About from '../pages/about/About';
 import HouseDetail from '../modules/houses/HouseDetailComponent/HouseDetail';
+import CreateHouses from '../modules/houses/CreateHouses/CreateHouses';
 export const routes: RouteObject[] = [
   {
     path: '/',
@@ -29,7 +30,11 @@ export const routes: RouteObject[] = [
               },
               {
                 path: 'house-detail',
-                element: <HouseDetail/>,
+                element: <HouseDetail />,
+              },
+              {
+                path: 'create-houses',
+                element: <CreateHouses />,
               },
             ],
           },
