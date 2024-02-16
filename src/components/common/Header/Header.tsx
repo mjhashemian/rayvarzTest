@@ -3,7 +3,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
-import Logo from '../../../public/icons/logo.svg';
+import Logo from '../../../../public/icons/logo.svg';
 const pages = ['houses', 'about'];
 
 const Header = () => {

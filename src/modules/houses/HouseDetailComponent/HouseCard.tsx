@@ -1,6 +1,5 @@
 import House from '../../../../public/icons/house.jpg';
-import CreateIcon from '@mui/icons-material/Create';
-import DeleteIcon from '@mui/icons-material/Delete';
+
 import Location from '../../../../public/icons/location.png';
 import Bath from '../../../../public/icons/bath.png';
 import Bed from '../../../../public/icons/bed.png';
@@ -8,6 +7,7 @@ import Brick from '../../../../public/icons/brick.png';
 import Euro from '../../../../public/icons/euro.png';
 import Square from '../../../../public/icons/square.png';
 import Warehouse from '../../../../public/icons/warehouse.png';
+import ActionCards from '../../../components/common/ActionCards/ActionCards';
 
 const HouseCard = () => {
   return (
@@ -16,10 +16,7 @@ const HouseCard = () => {
       <div className="w-full flex flex-col justify-start items-center">
         <div className="w-[95%] flex justify-between mt-2">
           <h1 className="text-[25px] font-[700]">Stokvistraat 132</h1>
-          <div className="w-[10%] flex gap-2">
-            <CreateIcon className="cursor-pointer" style={{ color: 'red' }} />
-            <DeleteIcon className="cursor-pointer" />
-          </div>
+            <ActionCards/>
         </div>
         <div className="w-[95%]  flex justify-start mt-2 gap-2">
           <img className="w-[25px]" src={Location} alt="" />

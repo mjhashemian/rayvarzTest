@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #cecece;
+  --secondary-color: #d35400;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* background-color: #fff; */
+  /* box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#185ee0, 0.15); */
+  border-radius: 16px;
+  width: 100%;
+  * {
+    z-index: 2;
+  }
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 50%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.5s ease-in;
+}
+
+input[type='radio'] {
+  &:checked {
+    & + label {
+      color: var(--primary-color);
+    }
+  }
+}
+
+input[id='tab-waterMeter'] {
+  &:checked {
+    & ~ .glider {
+      transform: translateX(0);
+    }
+  }
+}
+
+input[id='tab-dataLogger'] {
+  &:checked {
+    & ~ .glider {
+      transform: translateX(100%);
+    }
+  }
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 50%;
+  background-color: var(--secondary-color);
+  z-index: 1;
+  border-radius: 8px;
+  transition: 0.25s ease-out;
+}
