@@ -3,17 +3,9 @@ import Header from '../common/Header';
 
 function DashboardLayout() {
   return (
-    <div className="w-full min-h-[100vh] relative">
-      <div className="hidden md:hidden xl:block">{/* <SideBar /> */}</div>
+    <div className="w-full h-full flex justify-center items-center">
       <Header />
-      {/* <UserProfileDrawer open={openProfile} setOpen={setOpenProfile} /> */}
-      <div
-        style={{
-          minHeight: 280,
-          animation: 'ease-in-out',
-        }}
-        className=" w-full h-screen mt-[68px]"
-      >
+      <div className="w-full h-full mt-[68px] bg-[#ebebeb] ">
         <Outlet />
       </div>
     </div>
